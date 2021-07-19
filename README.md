@@ -2,7 +2,13 @@
 
 Get XPX from testnet
 
-# How to use
+## Installation
+
+```npm
+npm install xpx-faucet --save
+```
+
+## How to use
 
 ```typescript
 import { getXPX } from 'xpx-faucet';
