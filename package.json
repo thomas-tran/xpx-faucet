@@ -17,7 +17,7 @@
     "fix:lint": "eslint src --ext .ts --fix",
     "test": "run-s build test:*",
     "test:lint": "eslint src --ext .ts",
-    "test:prettier": "prettier \"src/**/*.ts\" --list-different",
+    "test:prettier": "prettier \"src/**/*.ts\" --write",
     "test:spelling": "cspell \"{README.md,.github/*.md,src/**/*.ts}\"",
     "test:unit": "nyc --silent ava",
     "check-cli": "run-s test diff-integration-tests check-integration-tests",
@@ -42,13 +42,14 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@bitauth/libauth": "^1.17.1"
+    "cross-fetch": "^3.1.4"
   },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
+    "@types/node": "^16.3.3",
     "ava": "^3.12.1",
     "codecov": "^3.5.0",
     "cspell": "^4.1.0",
